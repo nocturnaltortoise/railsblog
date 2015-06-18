@@ -1,0 +1,13 @@
+<nav class="page-nav">
+  <ul>
+    <li><%= link_to 'Home', articles_path %></li>
+    <li><%= link_to 'New', new_article_path %></li>
+  </ul>
+</nav>
+
+<% @articles.reverse.each do |article| %>
+  <div class="content-box">
+    <h1><%= article.title %></h1>
+    <p><%= article.text %></h1>
+  </div>
+<% end %>

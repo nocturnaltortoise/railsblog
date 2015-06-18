@@ -1,0 +1,33 @@
+<div class="top-stripe">
+  <nav class="page-nav">
+    <%= link_to 'Home', articles_path %>
+  </nav>
+</div>
+
+<div class="content-box">
+
+  <h1>New Article</h1>
+
+  <%= form_for :article, url: articles_path do |f| %>
+      <% if @article.errors.any? %>
+        <div class="error-message">
+          <p><em>
+            <%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:
+          </em></p>
+          <ul>
+            <% @article.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <!-- <%= f.label :title %> -->
+      <%= f.text_field :title, {:placeholder => "Type your post title here..."}%>
+
+      <!-- <%= f.label :text %> -->
+      <%= f.text_area :text, {:placeholder => "Type your blog post here..."} %>
+
+      <%= f.submit :save, {:class => "submit-button"} %>
+  <% end %>
+</div>
