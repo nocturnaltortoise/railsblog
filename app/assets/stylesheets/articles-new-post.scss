@@ -1,0 +1,61 @@
+input,textarea{
+    display: block;
+    margin: 10px;
+}
+
+.post-title, .post-text{
+    width: 90%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus{
+    decoration: none;
+}
+
+.post-title{
+    font-size: 18px;
+    font-family: 'Bitter';
+    font-weight: 700;
+}
+
+.post-text{
+    margin-top: 0;
+    font-size: 12px;
+    resize: none;
+    font-family: 'Bitter';
+    font-weight: 400;
+}
+
+.submit-button{
+    background-color: #269AED;
+    min-width: 10%;
+    border: none;
+    box-shadow: 0 3px #16649C;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Bitter';
+    font-weight: 700;
+}
+
+.submit-button:hover{
+    background-color: #1E82C9;
+}
+
+.submit-button:active{
+    background-color: #16649C;
+}
+
+.error-message-title{
+    padding: 5px;
+    background-color: #ff0000;
+}
+
+.error-message-text{
+    padding: 5px;
+    line-height: 1.6em;
+    background-color: rgba(255,0,0,0.6);
+}

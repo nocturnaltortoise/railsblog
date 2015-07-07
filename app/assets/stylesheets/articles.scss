@@ -2,115 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$page_background: #EBEBEB;
-$nav_background: #1B1C1C;
-$nav_highlight: #474747;
-$light_red: #ff0000;
-$dark_red: #D11313;
-$page_width: 500px;
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
 
-body{
-  background-color: $page_background;
-  padding: 0;
-  margin: 0;
+*{
+    margin: 0;
 }
 
-.page-nav{
-  margin-bottom: 20px;
-  height: 30px;
-  background-color: $nav_background;
-  border-bottom: 3px solid $light_red;
-  padding: 0;
-
-  a{
-    font-family: Helvetica;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-  }
-
-  ul{
-    height: 40px;
-    margin: 0 auto;
-    width: $page_width;
-    padding: 0;
-    li{
-      decoration: none;
-      padding: 10px;
-      display: inline;
-    }
-
-    li:hover{
-      background-color: $nav_highlight;
-    }
-  }
+.main-wrapper{
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    height: 100%;
 }
 
-.content-box{
-  margin: 0 auto;
-  width: $page_width;
-  padding: 20px;
-  margin-bottom: 50px;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-radius: 5px;
-  font-family: Helvetica;
-  box-shadow: 0 5px rgba(0,0,0,0.5);
-
-  .error-message{
-    background-color: rgba(255,0,0,0.2);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 90%;
-  }
-
-  h1,p{
-    margin: 10px;
-  }
-
-  h1{
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-  }
-
-  input,textarea{
-    display: block;
-    margin: 10px;
-    width: 95%;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-  }
-
-  label{
-    font-weight: bold;
-    margin: 10px;
-  }
-
-  textarea{
-    resize: none;
-    height: 300px;
-  }
-
-  .submit-button{
-    font-weight: bold;
-    color: black;
-    height: 30px;
-    width: 100px;
-    background-color: transparent;
-    background: linear-gradient(to bottom, $light_red, $dark_red);
-    box-shadow: none;
-    border: none;
-    border-bottom: 4px solid rgba(0,0,0,0.5);
-    border-right: 3px solid rgba(0,0,0,0.5);
-    border-radius: 5px;
-  }
-
-  .submit-button:active{
-    background: linear-gradient(to bottom, $dark_red, $dark_red);
-  }
-
-  .submit-button:hover{
-    background: linear-gradient(to bottom, $dark_red, $dark_red);
-  }
-
-}
+// .content-box{
+//     @import "articles_content"
+// }
+//
+// .page-nav{
+//     @import "articles_nav";
+// }

@@ -1,0 +1,43 @@
+$nav-background-colour: #3c596e;
+$top-stripe-background-color: #6e838f;
+
+.top-stripe{
+    background-color: $top-stripe-background-color;
+    min-height: 50px;
+}
+
+nav{
+    background-color: $nav-background-colour;
+
+    ul{
+        width: 70%;
+        list-style: none;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    li{
+        display: inline;
+        padding: 10px;
+    }
+
+    a{
+        background-color: transparent;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Bitter';
+        font-weight: 700;
+    }
+
+    // li:hover{
+    //     transition: background-color 1s ease-out 1s;
+    // }
+
+    li:hover:nth-child(2){
+        border-bottom: 3px solid #ff3700;
+    }
+
+    li:hover:nth-child(1){
+        border-bottom: 3px solid #007BFF;
+    }
+}
