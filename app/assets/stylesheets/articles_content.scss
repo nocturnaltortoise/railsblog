@@ -6,23 +6,43 @@
     box-shadow: 0 3px 5px #ccc;
     margin-bottom: 20px;
     background-color: #fff;
+    font-family: 'Bitter';
+    padding-bottom: 3px;
+
+    a{
+        font-weight: 700;
+        line-height: 1.6em;
+        padding: 5px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #3c596e;
+        transition: background-color 0.5s ease;
+        // border-right: 5px solid #ff0000;
+    }
+
+    // a:nth-child(4){
+    //     border-right: 5px solid #80ff00;
+    // }
+
+    a:hover{
+        background-color: #6e838f
+    }
 
     p{
-        font-family: 'Bitter';
         font-weight: 400;
         line-height: 1.6em;
         margin: 10px;
+        padding: 10px;
     }
 
     h1{
-        font-family: 'Bitter';
         font-weight: 700;
         border-bottom: 1px solid #ccc;
         margin: 10px;
+        padding: 10px;
     }
 
     li{
-        font-family: 'Bitter';
         font-weight: 400;
     }
 }

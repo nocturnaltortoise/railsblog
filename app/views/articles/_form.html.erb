@@ -1,0 +1,24 @@
+<%= form_for @article do |f| %>
+    <% if @article.errors.any? %>
+        <div class="error-message-title">
+            <p><em>
+                <%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:
+            </em></p>
+        </div>
+        <div class="error-message-text">
+            <ul>
+                <% @article.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <!-- <%= f.label :title %> -->
+    <%= f.text_field :title, {:class => "input-field post-title", :placeholder => "Type your post title here..." }%>
+
+    <!-- <%= f.label :text %> -->
+    <%= f.text_area :text, {:cols => "1", :rows => "30", :class => "input-field post-text", :placeholder => "Type your blog post here..."} %>
+
+    <%= f.submit :save, {:class => "submit-button"} %>
+<% end %>

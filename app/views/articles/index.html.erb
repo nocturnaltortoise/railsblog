@@ -10,7 +10,9 @@
     <% @articles.reverse.each do |article| %>
         <div class="content-box">
             <h1><%= article.title %></h1>
-            <p><%= article.text %></h1>
+            <p><%= article.text %></p>
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Show', article_path(article) %>
         </div>
     <% end %>
 </div>

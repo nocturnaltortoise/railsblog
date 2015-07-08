@@ -2,14 +2,14 @@
 <nav class="page-nav">
     <ul>
         <li><%= link_to 'Home', articles_path %></li>
-        <li><%= link_to 'New', new_article_path %></li>
+        <li><%= link_to 'New', articles_path %></li>
     </ul>
 </nav>
 
 <div class="main-wrapper">
     <div class="content-box">
-        <h1><%= @article.title %></h1>
-        <p><%= @article.text %></p>
-        <%= link_to 'Edit', edit_article_path(@article) %>
+
+      <%= render 'form' %>
+
     </div>
 </div>

@@ -19,6 +19,8 @@ nav{
     li{
         display: inline;
         padding: 10px;
+        border-bottom: none;
+        transition: border-bottom 0.15s ease-in-out;
     }
 
     a{
@@ -27,17 +29,24 @@ nav{
         color: #fff;
         font-family: 'Bitter';
         font-weight: 700;
+        transition: color 0.15s ease-in-out;
     }
 
     // li:hover{
     //     transition: background-color 1s ease-out 1s;
     // }
 
-    li:hover:nth-child(2){
-        border-bottom: 3px solid #ff3700;
-    }
-
     li:hover:nth-child(1){
         border-bottom: 3px solid #007BFF;
+        a{
+            color: #007BFF;
+        }
+    }
+
+    li:hover:nth-child(2){
+        border-bottom: 3px solid #ff3700;
+        a{
+            color: #ff3700;
+        }
     }
 }
