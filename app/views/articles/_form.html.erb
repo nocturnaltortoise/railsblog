@@ -18,7 +18,7 @@
     <%= f.text_field :title, {:class => "input-field post-title", :placeholder => "Type your post title here..." }%>
 
     <!-- <%= f.label :text %> -->
-    <%= f.text_area :text, {:cols => "1", :rows => "30", :class => "input-field post-text", :placeholder => "Type your blog post here..."} %>
+    <%= f.text_area :text, {:cols => "1", :rows => "20", :class => "input-field post-text", :placeholder => "Type your blog post here..."} %>
 
-    <%= f.submit :save, {:class => "submit-button"} %>
+    <%= f.submit :save, {:class => "submit-button", :value => "Publish"} %>
 <% end %>

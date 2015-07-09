@@ -1,10 +1,12 @@
-$nav-background-colour: #3c596e;
-$top-stripe-background-color: #6e838f;
+@import "articles";
+
+$nav-background-colour: #001011;
+$top-stripe-background-color: #093A3E;
 
 .top-stripe{
     padding: 20px;
     background-color: $top-stripe-background-color;
-    min-height: 50px;
+    min-height: 7%;
 }
 
 .first-chevron{
@@ -42,6 +44,7 @@ $top-stripe-background-color: #6e838f;
 nav{
     background-color: $nav-background-colour;
     // box-shadow: 0 -3px 5px rgba(0,0,0,0.5);
+    min-height: 5%;
 
     ul{
         width: 70%;
@@ -61,7 +64,7 @@ nav{
         background-color: transparent;
         text-decoration: none;
         color: #fff;
-        font-family: 'Bitter';
+        font-family: $font;
         font-weight: 700;
         transition: color 0.15s ease-in-out;
     }

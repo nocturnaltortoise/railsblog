@@ -13,10 +13,10 @@
 <div class="main-wrapper">
     <% @articles.reverse.each do |article| %>
         <div class="content-box">
-            <h1><%= article.title %></h1>
+            <a href="<%= article_path(article) %>"><h1><%= article.title %></h1></a>
             <p><%= article.text %></p>
-            <%= link_to 'Edit', edit_article_path(article) %>
-            <%= link_to 'Show', article_path(article) %>
+            <%= link_to 'Edit', edit_article_path(article),{:class => "bottom-link"} %>
+            <%= link_to 'Delete', article_path(article), method: :delete, :class => "bottom-link", data: { confirm: 'Are you sure?'} %>
         </div>
     <% end %>
 </div>
