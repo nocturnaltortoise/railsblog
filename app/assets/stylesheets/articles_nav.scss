@@ -9,38 +9,6 @@ $top-stripe-background-color: #093A3E;
     min-height: 7%;
 }
 
-.first-chevron{
-    margin-left: 15%;
-    height: 50px;
-    width: 70px;
-    -webkit-clip-path: polygon(100% 0, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    clip-path: polygon(100% 0, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    background-image: image-url('chevron.jpg');
-    background-color: #000;
-    opacity: 0.7;
-    border-color: #fff;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.first-chevron:hover{
-    opacity: 1;
-}
-
-.second-chevron{
-    @extend .first-chevron;
-    margin-left: 10px;
-    background-image: image-url('chevron2.jpg');
-    height: 40px;
-}
-
-.third-chevron{
-    @extend .first-chevron;
-    margin-left: 10px;
-    background-image: image-url('chevron3.jpg');
-    height: 30px;
-}
-
 nav{
     background-color: $nav-background-colour;
     // box-shadow: 0 -3px 5px rgba(0,0,0,0.5);
