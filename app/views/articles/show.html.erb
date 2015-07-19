@@ -9,7 +9,7 @@
 <div class="main-wrapper">
     <div class="content-box">
         <h1><%= @article.title %></h1>
-        <p><%= @article.text %></p>
+        <p><%=simple_format @article.text %></p>
         <%= link_to 'Edit', edit_article_path(@article), :class => "bottom-link" %>
     </div>
 </div>
